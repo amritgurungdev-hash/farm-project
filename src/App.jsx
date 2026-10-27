@@ -8,13 +8,13 @@ import Product from "./pages/Product.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
 import Sustainability from "./pages/Sustainability.jsx";
 import Quality from "./pages/Quality.jsx";
-import { BrowserRouter, Routes,Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Achivement from "./pages/Achivement.jsx";
 
 function App() {
 
   return (
-  <BrowserRouter>
+  <HashRouter>
     <Navbar/>
     <Routes>
       <Route path="/" element={<Home/>}/>
@@ -31,7 +31,7 @@ function App() {
     </Routes>
 
     <Footer/>
-    </BrowserRouter>
+    </HashRouter>
 
     
   )
